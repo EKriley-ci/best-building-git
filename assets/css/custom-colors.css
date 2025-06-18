@@ -1,0 +1,461 @@
+/* 
+==============================================
+BEST BUILDING - PALETTE DE COULEURS PERSONNALISÉE
+==============================================
+Couleurs principales du logo:
+- Bleu: #53A2DA
+- Vert: #7FBB48  
+- Orange: #F29222
+==============================================
+*/
+
+:root {
+  /* Couleurs principales du logo */
+  --bb-blue: #53A2DA;
+  --bb-green: #7FBB48;
+  --bb-orange: #F29222;
+  
+  /* Variations de bleu */
+  --bb-blue-light: #6BB2E4;
+  --bb-blue-lighter: #83C2EE;
+  --bb-blue-dark: #3B8AC6;
+  --bb-blue-darker: #2372B2;
+  --bb-blue-pale: #E8F4FD;
+  
+  /* Variations de vert */
+  --bb-green-light: #92C85C;
+  --bb-green-lighter: #A5D570;
+  --bb-green-dark: #6CA534;
+  --bb-green-darker: #598F20;
+  --bb-green-pale: #F0F8E8;
+  
+  /* Variations d'orange */
+  --bb-orange-light: #F5A236;
+  --bb-orange-lighter: #F8B24A;
+  --bb-orange-dark: #E0820E;
+  --bb-orange-darker: #CC7200;
+  --bb-orange-pale: #FDF4E8;
+  
+  /* Couleurs neutres complémentaires */
+  --bb-gray-dark: #2C3E50;
+  --bb-gray: #5A6C7D;
+  --bb-gray-light: #8A9BA8;
+  --bb-gray-lighter: #BDC3C7;
+  --bb-gray-pale: #F8F9FA;
+  
+  /* Couleurs d'état */
+  --bb-success: var(--bb-green);
+  --bb-warning: var(--bb-orange);
+  --bb-info: var(--bb-blue);
+  --bb-danger: #E74C3C;
+  
+  /* Couleurs de texte */
+  --bb-text-primary: var(--bb-gray-dark);
+  --bb-text-secondary: var(--bb-gray);
+  --bb-text-light: #FFFFFF;
+  
+  /* Couleurs de fond */
+  --bb-bg-primary: #FFFFFF;
+  --bb-bg-secondary: var(--bb-gray-pale);
+  --bb-bg-accent: var(--bb-blue-pale);
+}
+
+/* 
+==============================================
+APPLICATIONS DES COULEURS BEST BUILDING
+==============================================
+*/
+
+/* Header et Navigation */
+.header-content {
+  /* background: linear-gradient(135deg, var(--bb-blue) 0%, var(--bb-blue-dark) 100%); */
+}
+
+.header-content .logo img {
+  filter: brightness(1.1);
+}
+
+.header-content nav ul li a {
+  /* color: var(--bb-text-light) !important; */
+  transition: color 0.3s ease;
+}
+
+.header-content nav ul li a:hover,
+.header-content nav ul li a.active {
+  color: var(--bb-orange) !important;
+}
+
+.contact-head-info h4 {
+  /* color: var(--bb-text-light); */
+}
+
+.contact-head-info a {
+  background: var(--bb-orange);
+  color: var(--bb-text-light);
+  border-radius: 25px;
+  padding: 8px 20px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.contact-head-info a:hover {
+  background: var(--bb-orange-dark);
+}
+
+/* Boutons principaux */
+.lnk-default {
+  background: linear-gradient(135deg, var(--bb-green) 0%, var(--bb-green-dark) 100%) !important;
+  border: none !important;
+  color: var(--bb-text-light) !important;
+  transition: all 0.3s ease;
+}
+
+.lnk-default:hover {
+  background: linear-gradient(135deg, var(--bb-green-dark) 0%, var(--bb-green-darker) 100%) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(127, 187, 72, 0.3);
+}
+
+.lnk-default2 {
+  color: var(--bb-blue) !important;
+  border-bottom: 2px solid var(--bb-blue);
+  transition: all 0.3s ease;
+}
+
+.lnk-default2:hover {
+  color: var(--bb-blue-dark) !important;
+  border-bottom-color: var(--bb-blue-dark);
+}
+
+/* Titres et sous-titres */
+.sub-title {
+  color: var(--bb-gray-dark) !important;
+  position: relative;
+}
+
+.sub-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--bb-orange) 0%, var(--bb-green) 100%);
+  border-radius: 2px;
+}
+
+/* Sections avec fond coloré */
+.block2 {
+  background: var(--bb-bg-secondary);
+}
+
+.fixed-bg.bg1 {
+  background: linear-gradient(135deg, var(--bb-blue-pale) 0%, var(--bb-green-pale) 100%);
+}
+
+.fixed-bg.bg2 {
+  background: linear-gradient(135deg, var(--bb-orange-pale) 0%, var(--bb-blue-pale) 100%);
+}
+
+/* Cards et éléments de contenu */
+.project-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(83, 162, 218, 0.2);
+}
+
+.project-info h3 a {
+  color: var(--bb-gray-dark) !important;
+}
+
+.project-info h3 a:hover {
+  color: var(--bb-blue) !important;
+}
+
+/* Témoignages */
+.testi-slide {
+  background: var(--bb-bg-primary);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid var(--bb-green);
+  transition: all 0.3s ease;
+}
+
+.testi-slide:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 35px rgba(127, 187, 72, 0.15);
+}
+
+.rating li i {
+  color: var(--bb-orange) !important;
+}
+
+/* Formulaires */
+.form-control {
+  border: 2px solid var(--bb-gray-lighter);
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--bb-blue);
+  box-shadow: 0 0 0 0.2rem rgba(83, 162, 218, 0.25);
+}
+
+.form-submit button {
+  background: var(--bb-orange) !important;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.form-submit button:hover {
+  background: var(--bb-orange-dark) !important;
+  transform: scale(1.1);
+}
+
+/* Processus de travail */
+.proz-mint {
+  background: var(--bb-bg-primary);
+  border-radius: 15px;
+  padding: 25px;
+  border-left: 4px solid var(--bb-blue);
+  transition: all 0.3s ease;
+}
+
+.proz-mint:hover {
+  border-left-color: var(--bb-green);
+  transform: translateX(5px);
+}
+
+.p-num {
+  color: var(--bb-orange) !important;
+  font-weight: bold;
+}
+
+/* Équipe */
+.team {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.team:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(127, 187, 72, 0.2);
+}
+
+.figcaption {
+  background: linear-gradient(135deg, var(--bb-blue) 0%, var(--bb-green) 100%);
+  color: var(--bb-text-light);
+}
+
+/* Statistiques */
+.award-col h2 {
+  color: var(--bb-orange) !important;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.award-col h3 {
+  color: var(--bb-gray-dark);
+}
+
+/* Services */
+.svs-item {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.svs-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 35px rgba(83, 162, 218, 0.15);
+}
+
+.svss-info h3 a {
+  color: var(--bb-blue) !important;
+}
+
+.svss-info h3 a:hover {
+  color: var(--bb-blue-dark) !important;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(135deg, var(--bb-gray-dark) 0%, var(--bb-gray) 100%);
+  color: var(--bb-text-light);
+}
+
+.widget-title {
+  color: var(--bb-orange) !important;
+  margin-bottom: 20px;
+}
+
+.ft-links li a {
+  color: var(--bb-gray-lighter) !important;
+  transition: color 0.3s ease;
+}
+
+.ft-links li a:hover {
+  color: var(--bb-green) !important;
+}
+
+.social-links li a {
+  background: var(--bb-blue);
+  color: var(--bb-text-light);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-links li a:hover {
+  background: var(--bb-green);
+  transform: translateY(-3px);
+}
+
+/* Breadcrumb */
+.breadcrumb li a {
+  color: var(--bb-blue) !important;
+}
+
+.breadcrumb li span {
+  color: var(--bb-orange) !important;
+}
+
+/* Contact Info */
+.contact_info {
+  background: linear-gradient(135deg, var(--bb-blue) 0%, var(--bb-blue-dark) 100%);
+  border-radius: 15px;
+  padding: 40px 30px;
+  color: var(--bb-text-light);
+}
+
+.ci-icon {
+  background: var(--bb-orange);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+/* Animations et effets */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wow.fadeInUp {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .sub-title::after {
+    width: 40px;
+    height: 2px;
+  }
+  
+  .testi-slide {
+    padding: 20px;
+  }
+  
+  .proz-mint {
+    padding: 20px;
+  }
+}
+
+/* Utilitaires de couleur */
+.text-bb-blue { color: var(--bb-blue) !important; }
+.text-bb-green { color: var(--bb-green) !important; }
+.text-bb-orange { color: var(--bb-orange) !important; }
+
+.bg-bb-blue { background-color: var(--bb-blue) !important; }
+.bg-bb-green { background-color: var(--bb-green) !important; }
+.bg-bb-orange { background-color: var(--bb-orange) !important; }
+
+.border-bb-blue { border-color: var(--bb-blue) !important; }
+.border-bb-green { border-color: var(--bb-green) !important; }
+.border-bb-orange { border-color: var(--bb-orange) !important; }
+
+/* Effets de survol spéciaux */
+.bb-hover-effect {
+  transition: all 0.3s ease;
+}
+
+.bb-hover-effect:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(83, 162, 218, 0.2);
+}
+
+/* Gradients personnalisés */
+.bb-gradient-primary {
+  background: linear-gradient(135deg, var(--bb-blue) 0%, var(--bb-green) 100%);
+}
+
+.bb-gradient-secondary {
+  background: linear-gradient(135deg, var(--bb-green) 0%, var(--bb-orange) 100%);
+}
+
+.bb-gradient-accent {
+  background: linear-gradient(135deg, var(--bb-orange) 0%, var(--bb-blue) 100%);
+}
+
+/* Overlays colorés */
+.bb-overlay-blue::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(83, 162, 218, 0.8);
+  z-index: 1;
+}
+
+.bb-overlay-green::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(127, 187, 72, 0.8);
+  z-index: 1;
+}
+
+.bb-overlay-orange::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(242, 146, 34, 0.8);
+  z-index: 1;
+}
